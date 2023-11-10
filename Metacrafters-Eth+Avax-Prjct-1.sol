@@ -16,7 +16,7 @@ contract SafetyContract {
         _;
     }
 	
-	function setVal(uint256 _n1, uint256 _n2) public pure returns (uint256) public onlyowner {
+	function setVal(uint256 _n1, uint256 _n2) public onlyOwner {
 		
 		require(_n1 > _n2, "First number must be higher than the second number");
 		
@@ -24,44 +24,44 @@ contract SafetyContract {
 		num2 = _n2;
 	}
 	
-	function addAssertVal() public pure returns (uint256) public onlyOwner {
+	function addVals() public view returns (uint256) {
 		
-		assert( num1 > num2 );
+		assert( num1 != 0 && num2 != 0 );
 
         return num1 + num2;
 	}
 	
-	function subAssertVal() public pure returns (uint256) public onlyOwner {
+	function subVals() public view returns (uint256) {
 		
-		assert( num1 > num2 );
+		assert( num1 != 0 && num2 != 0 );
 
         return num1 - num2;
 	}
 	
-	function mulAssertVal() public pure returns (uint256) public onlyOwner {
+	function mulVals() public view returns (uint256) {
 		
-		assert( num1 > num2 );
+		assert( num1 != 0 && num2 != 0 );
 
         return num1 * num2;
 	}
 	
-	function divAssertVal() public pure returns (uint256) public onlyOwner {
+	function divVals() public view returns (uint256) {
 		
-		assert( num1 > num2 );
+		assert( num1 != 0 && num2 != 0 );
 
         return num1 / num2;
 	}
 	
-	function revertVal(uint256 _value) public pure returns (uint256) {
+	function revertVals() public view returns (uint256) {
 		
-		if (_value % 2 == 0) {
-            revert("The value should be an odd number");
+		if ( num1 == 0 || num2 == 0 ) {
+            revert("The valus should not be zero.");
 			
         } else{
-            return _value * 2;
+            return 0;
 			
         }
 	}
-	
-
 }
+
+
