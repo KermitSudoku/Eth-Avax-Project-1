@@ -53,11 +53,9 @@ Once the code is compiled, you can deploy the contract by clicking on the "Deplo
 
 ### Using the program
 
-Once the contract is deployed, you can interact with it by calling the setVal function. Click on the "OpValCntrct" contract in the left-hand sidebar, enter your 2 numbers on the space on the right of the "setVal" function, and then click on the "setVal" function itself. 
+Once the contract is deployed, you can interact with it by calling the setVal function. Click on the `OpValCntrct` contract in the left-hand sidebar, enter your 2 numbers on the space on the right of the `setVal` function, and then click on the `setVal` function itself. 
 
-You can interact with the other functions provided that you have numbers in your 'num1' and 'num2' variables
-
-Finally, click on the "transact" button to execute the function and retrieve the "Hello World!" message.
+You can interact with the other functions provided that you have numbers in your `num1` and `num2` variables
 
 ## Authors
 
