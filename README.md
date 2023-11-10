@@ -64,5 +64,5 @@ Finally, click on the "transact" button to execute the function and retrieve the
 Contributors names and contact info
 
 Jarod Jangcan
-[/KermitSudoku](https://github.com/KermitSudoku)
+[KermitSudoku](https://github.com/KermitSudoku)
 
