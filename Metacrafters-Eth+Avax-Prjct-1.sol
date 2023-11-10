@@ -24,11 +24,32 @@ contract SafetyContract {
 		num2 = _n2;
 	}
 	
-	function assertVal() public pure returns (uint256) public onlyOwner {
+	function addAssertVal() public pure returns (uint256) public onlyOwner {
 		
 		assert( num1 > num2 );
 
-        return _val + 1;
+        return num1 + num2;
+	}
+	
+	function subAssertVal() public pure returns (uint256) public onlyOwner {
+		
+		assert( num1 > num2 );
+
+        return num1 - num2;
+	}
+	
+	function mulAssertVal() public pure returns (uint256) public onlyOwner {
+		
+		assert( num1 > num2 );
+
+        return num1 * num2;
+	}
+	
+	function divAssertVal() public pure returns (uint256) public onlyOwner {
+		
+		assert( num1 > num2 );
+
+        return num1 / num2;
 	}
 	
 	function revertVal(uint256 _value) public pure returns (uint256) {
