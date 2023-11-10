@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-contract SafetyContract {
+contract OpValCntrct {
 
     uint256 num1;
 	uint256 num2;
