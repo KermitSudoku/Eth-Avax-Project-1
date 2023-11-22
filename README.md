@@ -59,8 +59,5 @@ You can interact with the other functions provided that you have numbers in your
 
 ## Authors
 
-Contributors names and contact info
-
-Jarod Jangcan
 [KermitSudoku](https://github.com/KermitSudoku)
 
